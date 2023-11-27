@@ -55,6 +55,8 @@ local plugins = {
         "codelldb",
         "pyright",
         "lua-language-server",
+        "mypy",
+        "ruff",
       }
     }
   }
