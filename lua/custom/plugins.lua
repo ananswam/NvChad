@@ -1,11 +1,11 @@
 local plugins = {
-  {
-    "zbirenbaum/copilot.lua",
-    event="InsertEnter",
-    config=function()
-      return require("copilot").setup(require("custom.configs.copilot") )
-    end,
-  },
+  -- {
+  --   "zbirenbaum/copilot.lua",
+  --   event="InsertEnter",
+  --   config=function()
+  --     return require("copilot").setup(require("custom.configs.copilot") )
+  --   end,
+  -- },
   {
     "rcarriga/nvim-dap-ui",
     dependencies = "mfussenegger/nvim-dap",
