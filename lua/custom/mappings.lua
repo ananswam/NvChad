@@ -4,6 +4,9 @@ M.general = {
     i = {
       ["kj"] = {"<ESC>", "Exit insert mode"},
     },
+    n = {
+      ["<C-e>"] = { "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
+    },
 }
 
 M.lspconfig = {
@@ -11,6 +14,12 @@ M.lspconfig = {
     ["dg"] = {
       "<C-o>",
       "Go Back",
+    },
+    ["<leader>th"] = {
+      function()
+        vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+      end,
+      "Toggle inlay hints",
     },
   }
 }

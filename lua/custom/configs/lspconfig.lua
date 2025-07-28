@@ -13,7 +13,7 @@ lspconfig.clangd.setup {
   capabilities = capabilities,
 }
 
-lspconfig.pyright.setup({
+lspconfig.basedpyright.setup({
   on_attach = on_attach,
   capabilities = capabilities,
   filetypes = {"python"},
